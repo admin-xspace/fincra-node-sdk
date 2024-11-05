@@ -1,4 +1,26 @@
-const data = {
+Business category: Manufacturing 
+Beneficial owners: [Damarcus Jones Sr, Will Smith 
+  {
+    document: {
+      type: 'International Pass',
+      number: '2103822',
+      Issued by: 'SEC',
+      Issue date: '2021-09-05',
+      Expiration date: '2048-09-05',
+      Issued country code: 'ISO-840',
+    },
+    Ownerships percentage: '100%',
+    First name: 'Damarcus,
+    Last name: 'Jones',
+    Spokesperson: 'SP',
+  },
+],
+Business name: 'Street2CorporateVision',
+bvn: '20324535',
+email: 'jonestechnologyfoundation@gmail.com',
+Additional info: 'Nada',
+Incorporation date: '2020-09-04',
+Description: 'Tech',const data = {
   business: '627fefbe5a65ec99ba9af0be',
   amount: '200',
   action: 'credit',
