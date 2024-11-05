@@ -1,4 +1,24 @@
-# Fincra-node-sdk
+const data = {
+  business: '627fefbe5a65ec99ba9af0be',
+  amount: '200',
+  action: 'credit',
+  page: '1',
+  perPage: '10',
+};
+const walletLogs = await fincra.wallet.listWalletLogs(data);const walletId = '62c1be78a14d91ca07297cfd';
+const getWallet = await fincra.wallet.getWallet(walletId);const businessId = '62c5c5876805783477ef9f7a';
+const wallets = await fincra.wallet.listWallet(businessId);587680578347const data = {
+  businessId: '62c5c5876805783477ef9f7a',
+  subAccountId: '62c631d3118b23e56849c97a',
+  page: '1',
+  perPage: '20',
+};
+const listSubVirtualAcct = await fincra.virtualAccount.listSubVirtualAccounts(
+  data
+);const virtualAccountId = '62c1be78a14d91ca07297cfd';
+const deactivated = await fincra.virtualAccount.deactivateVirtualAccount(
+  virtualAccountId
+);# Fincra-node-sdk
 
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/E-wave112/fincra-node-sdk/tree/main.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/E-wave112/fincra-node-sdk/tree/main)
 ![npm](https://img.shields.io/npm/v/fincra-node-sdk) ![npm](https://img.shields.io/npm/dt/fincra-node-sdk) ![NPM](https://img.shields.io/npm/l/fincra-node-sdk) ![npm bundle size](https://img.shields.io/bundlephobia/min/fincra-node-sdk)
