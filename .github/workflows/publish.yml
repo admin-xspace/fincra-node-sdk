@@ -3,9 +3,57 @@ on:
   release:
     types: [created]
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
+  build:.github/workflows/publish.yml
+    runs-on:const createCorporateVirtualAccountObj = {
+  businessId:const businessId = '62c5c5876805783477ef9f7a';
+const wallets = await fincra.wallet.listWallet(businessId);
+  subAccountId:const walletId =const businessId = '62c5c5876805783477ef9f7a';
+const wallets = await fincra.wallet.listWallet(businessId);
+const getWallet = await fincra.wallet.getWallet(walletId);
+  currency: 'EUR',
+  accountType: 'corporate',
+  KYCInformation: {
+    address: {
+      country: 'iso 3866',
+      state: 'San Fransisco',
+      city: 'California',
+      street: 'Menlo park',
+      zip: '94025',
+    },
+    businessCategory: 'NGO',
+    ultimateBeneficialOwners: [
+      {
+        document: {
+          type: 'International Pass',
+          number: '2103822',
+          issuedBy: 'SEC',
+          issuedDate: '2021-09-05',
+          expirationDate: '2022-09-05',
+          issuedCountryCode: 'ISO-840',
+        },
+        ownershipPercentage: '90%',
+        firstName: 'Max',
+        lastName: 'Kaye',
+        politicallyExposedPerson: 'PEP',
+      },
+    ],
+    businessName: 'Kirsch corp',
+    bvn: '20324535',
+    email: 'eddie@kirsch.corp',
+    additionalInfo: 'Nada',
+    incorporationDate: '2020-09-04',
+    businessActivityDescription: 'Tech',
+  },
+  monthlyVolume: '900',
+  entityName: 'Kirsch corp',
+  reason: 'cross border payments',
+  paymentFlowDescription: 'EURO to GPB',
+  channel: 'vfd',
+};
+
+const createCorporate =
+  await fincra.virtualAccount.createCorporateSubVirtualAccount(data);
+    steps:.
       - name: Checkout
         uses: actions/checkout@v2
       - name: Setup Node
